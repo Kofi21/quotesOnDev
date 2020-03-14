@@ -70,17 +70,23 @@ table {
   .header img {
     width: 50%; }
 
-.footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-right: 50px; }
-
-.footer li {
-  padding-right: 10px; }
+.footer {
+  margin-right: 50px; }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 50px;
+    color: #0c0;
+    font-size: 16px;
+    font-family: 'Exo', sans-serif; }
+    .footer ul span {
+      color: white; }
+  .footer li {
+    padding: 0 8px; }
 
 body {
   background-color: #222;
@@ -96,24 +102,9 @@ body {
           justify-content: space-evenly;
   height: 100vh; }
 
-h2 {
-  font-size: 40px;
-  font-family: 'Exo', sans-serif;
-  color: white;
-  font-size: 40px;
-  width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  line-height: 60px; }
-
-p {
-  font-size: 20px;
-  font-family: 'Exo', sans-serif;
-  color: white; }
-  p a {
-    text-decoration: none;
-    color: #00cc00; }
+a {
+  text-decoration: none;
+  color: #00cc00; }
 
 .home-page-container {
   text-align: center; }
@@ -127,9 +118,21 @@ p {
     .home-page-container .randomQuote div {
       grid-column-start: 2; }
       .home-page-container .randomQuote div p:first-child {
-        font-size: 40px; }
+        font-size: 40px;
+        font-family: 'Exo', sans-serif;
+        color: white;
+        font-size: 40px;
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        line-height: 60px;
+        margin-bottom: 50px; }
       .home-page-container .randomQuote div p {
-        font-size: 20px; }
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-family: 'Exo', sans-serif;
+        color: white; }
     .home-page-container .randomQuote .fa-quote-right {
       grid-column-start: 3;
       color: #00cc00; }
