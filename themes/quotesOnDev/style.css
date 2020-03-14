@@ -11,136 +11,48 @@ Text Domain: QuotesOnDev
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-ol,
-ul {
-  list-style: none;
-}
+ol, ul {
+  list-style: none; }
 
-blockquote,
-q {
-  quotes: none;
-}
+blockquote, q {
+  quotes: none; }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 .header {
   display: -webkit-box;
@@ -148,31 +60,27 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  align-items: center;
-}
-.header img {
-  width: 50%;
-}
+  align-items: center; }
+  .header img {
+    width: 50%; }
 
 .footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding-right: 50px;
-}
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 50px; }
 
 .footer li {
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 body {
   background-color: #222;
@@ -181,65 +89,22 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  height: 100vh;
-}
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100vh; }
 
 h2 {
   font-size: 40px;
-  font-family: Exo Web, sans-serif;
-}
+  font-family: 'Exo', sans-serif;
+  color: white; }
+
+p {
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+  color: white; }
 
 .home-page-container {
-  text-align: center;
-}
-@font-face {
-  font-family: 'Exo';
-  src: url('Exo-MediumItalic.eot');
-  src: url('Exo-MediumItalic.eot?#iefix') format('embedded-opentype'),
-    url('Exo-MediumItalic.woff2') format('woff2'),
-    url('Exo-MediumItalic.woff') format('woff'),
-    url('Exo-MediumItalic.ttf') format('truetype'),
-    url('Exo-MediumItalic.svg#Exo-MediumItalic') format('svg');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Exo';
-  src: url('Exo-LightItalic.eot');
-  src: url('Exo-LightItalic.eot?#iefix') format('embedded-opentype'),
-    url('Exo-LightItalic.woff2') format('woff2'),
-    url('Exo-LightItalic.woff') format('woff'),
-    url('Exo-LightItalic.ttf') format('truetype'),
-    url('Exo-LightItalic.svg#Exo-LightItalic') format('svg');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Exo';
-  src: url('Exo-Medium.eot');
-  src: url('Exo-Medium.eot?#iefix') format('embedded-opentype'),
-    url('Exo-Medium.woff2') format('woff2'),
-    url('Exo-Medium.woff') format('woff'),
-    url('Exo-Medium.ttf') format('truetype'),
-    url('Exo-Medium.svg#Exo-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Exo';
-  src: url('Exo-Light.eot');
-  src: url('Exo-Light.eot?#iefix') format('embedded-opentype'),
-    url('Exo-Light.woff2') format('woff2'), url('Exo-Light.woff') format('woff'),
-    url('Exo-Light.ttf') format('truetype'),
-    url('Exo-Light.svg#Exo-Light') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
+  text-align: center; }

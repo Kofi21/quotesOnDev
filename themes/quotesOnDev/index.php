@@ -14,7 +14,7 @@
         <?php foreach ( $quotes as $quote ) : setup_postdata( $quote ); ?>
     
     <div class="randomQuote">
-    <?php the_content(); ?>
+    <!-- <?php the_content(); ?> -->
     </div>
     
 <?php endforeach;?>
