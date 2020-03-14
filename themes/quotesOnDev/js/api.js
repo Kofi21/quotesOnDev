@@ -16,10 +16,13 @@
         let sourceUrl = data[randNum]._qod_quote_source_url;
 
         $('.randomQuote').html(`
-      <i class="fas fa-quote-left"></i>
-      <h2 ${content} </h2>
-      <p> - ${title} . ${source} . ${sourceUrl} </p>
-      <i class="fas fa-quote-right"></i>`);
+        <i class="fas fa-quote-left"></i>
+        <div>
+        ${content}
+        <p> - ${title}, <a href="${sourceUrl}"> ${source}</a></p>
+        </div>
+                <i class="fas fa-quote-right"></i>    
+`);
       });
 
       // Closing done function
