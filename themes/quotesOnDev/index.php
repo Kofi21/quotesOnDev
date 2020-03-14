@@ -1,17 +1,27 @@
 <?php get_header(); ?>
 <!-- Random quote loop -->
-<?php if( have_posts() ) : 
-    while( have_posts() ) :
-        the_post(); ?>
+<!--  -->
     <!-- Random quote content -->
-    <h2><?php the_title(); ?></h2>
+    <div class="home-page-container">
+    <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'order' => 'RAND',
+            'numberposts' => 1
+            );
+        $quotes = get_posts( $args ); // returns an array of posts
+        ?>
+        <?php foreach ( $quotes as $quote ) : setup_postdata( $quote ); ?>
+    
+    <div class="randomQuote">
     <?php the_content(); ?>
-<?php endwhile;?>
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+    </div>
+    
+<?php endforeach;?>
+
 <!-- Random quote generator -->
-<button class="randomQuote">Click Me!</button>
-<div class="test-div">
+<div>
+<button id="quote">Click Me!</button>
 </div>
+        </div>
 <?php get_footer();?>
