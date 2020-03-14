@@ -95,3 +95,6 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100vh; }
+
+.home-page-container {
+  text-align: center; }
