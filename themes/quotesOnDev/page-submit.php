@@ -1,30 +1,61 @@
 <?php get_header(); ?>
-<div class="submit-page-container">
-<?php if( have_posts() ) :
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    
-    <div class="randomQuote">
 
+<?php
+if ( is_user_logged_in() ) {?>
+
+       <section class="submit-quote">
+       <i class="fas fa-quote-left"></i>    
+
+            <h3>Submit a Quote</h3>
+
+            <form>
+
+            <p>Author of Quote</p>
+            <input type='text'/>
+        
+            <p>Quote</p>
+            <textarea type='text'></textarea>
+        
+            <p>Where did you find this quote? (e.g. book name) </p>
+            <input type='text'/>
+        
+            <p>Provide the URL of the quote source, if available.</p>
+            <input type='text'/>
+        
+            </form>
+
+            <div>
+                <button id="submit-quote">Submit Quote</button>
+            </div>
+            <i class="fas fa-quote-right"></i>    
+
+        </section>
+
+
+    
+<?php
+} else {?>
+
+
+    <section class="login">
+    
 <i class="fas fa-quote-left"></i>
-<div>
-       <?php the_content();?>
-        <p>SOURCE AND URL</p>
+
+      <div>
+        <h3>Submit a Quote</h3>
+        <p>Sorry, you must be logged in to submit a quote!</p>
+        <a href="<?php echo get_home_url() . '/wp-login.php' ;?>">
+         <h4>Click here to login</h4>
+        </a>
 </div>
-        <i class="fas fa-quote-right"></i>    
+<i class="fas fa-quote-right"></i>    
 
- </div>
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
+    </section>
 
-    <?php the_posts_navigation();?>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
 
-</div>
+<?php }?>
+
+
+
 <?php get_footer();?>

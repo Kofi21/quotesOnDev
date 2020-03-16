@@ -145,33 +145,84 @@ a {
     color: #0c0;
     background-color: #222; }
 
-.submit-page-container {
-  text-align: center; }
-  .submit-page-container .randomQuote {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    font-size: 100px; }
-    .submit-page-container .randomQuote .fa-quote-left {
-      grid-column-start: 1;
+.submit-quote {
+  display: grid;
+  grid-template-columns: 1.25fr 2.5fr 1.25fr; }
+  .submit-quote h3,
+  .submit-quote form,
+  .submit-quote div {
+    grid-column-start: 2; }
+  .submit-quote .fa-quote-left {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center; }
+  .submit-quote .fa-quote-right {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center; }
+  .submit-quote h3 {
+    font-size: 25px;
+    color: white; }
+  .submit-quote form {
+    padding-top: 20px; }
+    .submit-quote form p {
+      padding-bottom: 5px;
+      padding-top: 20px;
+      color: white; }
+    .submit-quote form input,
+    .submit-quote form textarea {
+      border-color: #00cc00;
+      background: #222222;
+      color: white;
+      font-size: 15px; }
+    .submit-quote form input {
+      width: 50%;
+      height: 20px; }
+    .submit-quote form textarea {
+      width: 75%;
+      height: 70px; }
+  .submit-quote div {
+    margin-top: 30px; }
+    .submit-quote div button {
+      width: 150px;
+      border: 1px solid #0c0;
+      border-radius: 3px;
+      height: 35px;
+      font-size: 16px;
+      color: #0c0;
+      background-color: #222; }
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 100px; }
+  .login .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    text-align: center; }
+  .login .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    text-align: center; }
+  .login div {
+    grid-column-start: 2; }
+    .login div h3 {
+      font-size: 40px;
+      font-family: 'Exo', sans-serif;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 30px; }
+    .login div p {
+      font-size: 16px;
+      font-family: 'Exo', sans-serif;
+      color: white; }
+    .login div a {
+      font-size: 16px;
+      font-family: 'Exo', sans-serif;
       color: #00cc00; }
-    .submit-page-container .randomQuote div {
-      grid-column-start: 2; }
-      .submit-page-container .randomQuote div p:first-child {
-        font-size: 40px;
-        font-family: 'Exo', sans-serif;
-        color: white;
-        font-size: 40px;
-        width: 640px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-        line-height: 60px;
-        margin-bottom: 50px; }
-      .submit-page-container .randomQuote div p {
-        font-size: 20px;
-        margin-bottom: 50px;
-        font-family: 'Exo', sans-serif;
-        color: white; }
-    .submit-page-container .randomQuote .fa-quote-right {
-      grid-column-start: 3;
-      color: #00cc00; }
+      .login div a h4 {
+        margin-top: 30px; }
