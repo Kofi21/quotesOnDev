@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center;
+  }
+
+  div {
+    grid-column-start: 2;
+    width: 670px;
+
+    h1 {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'Exo', sans-serif;
+      color: white;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    p:nth-child(2) {
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: #00cc00;
+    }
+  }
+
+  .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center;
+  }
+}
