@@ -256,3 +256,36 @@ a {
       color: #00cc00; }
       .login div a h4 {
         margin-top: 30px; }
+
+.error-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; }
+  .error-page .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center; }
+  .error-page div {
+    grid-column-start: 2;
+    width: 670px; }
+    .error-page div h1 {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 20px; }
+    .error-page div p {
+      font-family: 'Exo', sans-serif;
+      color: white;
+      font-size: 16px;
+      line-height: 25px; }
+    .error-page div p:nth-child(2) {
+      margin-bottom: 20px; }
+    .error-page div span {
+      color: #00cc00; }
+    .error-page div i {
+      color: #00cc00;
+      margin-left: 5px; }
+  .error-page .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: center; }
