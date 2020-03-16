@@ -144,3 +144,34 @@ a {
     font-size: 20px;
     color: #0c0;
     background-color: #222; }
+
+.submit-page-container {
+  text-align: center; }
+  .submit-page-container .randomQuote {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 100px; }
+    .submit-page-container .randomQuote .fa-quote-left {
+      grid-column-start: 1;
+      color: #00cc00; }
+    .submit-page-container .randomQuote div {
+      grid-column-start: 2; }
+      .submit-page-container .randomQuote div p:first-child {
+        font-size: 40px;
+        font-family: 'Exo', sans-serif;
+        color: white;
+        font-size: 40px;
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        line-height: 60px;
+        margin-bottom: 50px; }
+      .submit-page-container .randomQuote div p {
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-family: 'Exo', sans-serif;
+        color: white; }
+    .submit-page-container .randomQuote .fa-quote-right {
+      grid-column-start: 3;
+      color: #00cc00; }
