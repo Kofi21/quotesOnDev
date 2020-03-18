@@ -6,7 +6,7 @@
     <?php
         $args = array( 
             'post_type' => 'post', 
-            'order' => 'RAND',
+            'or der' => 'RAND',
             'numberposts' => 1
             );
         $quotes = get_posts( $args ); // returns an array of posts
