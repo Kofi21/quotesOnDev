@@ -1,0 +1,52 @@
+.archives {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 32px;
+
+  .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: right;
+    margin-right: 64px;
+  }
+
+  .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: left;
+    margin-left: 64px;
+  }
+
+  h1,
+  p {
+    color: white;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    li {
+      padding: 0px 10px 10px 10px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}

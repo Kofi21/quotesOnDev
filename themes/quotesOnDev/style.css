@@ -67,8 +67,10 @@ table {
           align-items: center;
   width: 100%;
   align-items: center; }
-  .header a img {
-    width: 650px; }
+  .header a {
+    margin-top: 64px; }
+    .header a img {
+      width: 650px; }
 
 .footer {
   margin-right: 50px; }
@@ -97,9 +99,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100vh; }
 
 a {
@@ -297,3 +299,74 @@ a {
     color: #00cc00;
     font-size: 100px;
     text-align: center; }
+
+.archives {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 32px; }
+  .archives .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: right;
+    margin-right: 64px; }
+  .archives .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    font-size: 100px;
+    text-align: left;
+    margin-left: 64px; }
+  .archives h1,
+  .archives p {
+    color: white; }
+  .archives h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .archives p {
+    font-size: 30px; }
+  .archives ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    .archives ul li {
+      padding: 0px 10px 10px 10px; }
+      .archives ul li a {
+        font-size: 20px; }
+
+.category-page-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 100px; }
+  .category-page-container .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    text-align: right; }
+  .category-page-container .categoryQuote {
+    grid-column-start: 2; }
+    .category-page-container .categoryQuote p:first-child {
+      font-size: 40px;
+      font-family: 'Exo', sans-serif;
+      color: white;
+      font-size: 40px;
+      width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 60px;
+      margin-bottom: 50px; }
+    .category-page-container .categoryQuote p {
+      font-size: 20px;
+      margin-bottom: 50px;
+      font-family: 'Exo', sans-serif;
+      color: white; }
+  .category-page-container .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    grid-row-start: 1;
+    text-align: left; }
