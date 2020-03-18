@@ -370,6 +370,7 @@ a {
     color: #00cc00;
     grid-row-start: 1;
     text-align: left; }
+<<<<<<< HEAD
 
 .tag-page-container {
   display: grid;
@@ -402,3 +403,5 @@ a {
     color: #00cc00;
     grid-row-start: 1;
     text-align: left; }
+=======
+>>>>>>> 254d58f2f550beacb147ee69145d8d27a3e42372
