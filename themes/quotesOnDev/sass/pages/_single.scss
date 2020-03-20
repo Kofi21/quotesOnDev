@@ -1,4 +1,4 @@
-.category-page-container {
+.quote-author-page-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   font-size: 100px;
@@ -19,9 +19,8 @@
     color: white;
   }
 
-  .categoryQuote {
+  .authorQuote {
     grid-column-start: 2;
-    border-bottom: 1px dotted #fff;
 
     p {
       font-size: 40px;
@@ -55,17 +54,20 @@
     text-align: left;
     padding-left: 30px;
   }
-}
+  button {
+    width: 250px;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 20px;
+    color: #0c0;
+    background-color: #222;
+  }
 
-.pagination {
-  grid-column-start: 2;
-  margin-top: 32px;
-}
-
-.pagination a {
-  font-size: 20px;
-  color: #00cc00;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
+  div {
+    grid-column-start: 2;
+  }
+  button:hover {
+    cursor: pointer;
+  }
 }

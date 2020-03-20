@@ -70,10 +70,12 @@ table {
   .header a {
     margin-top: 64px; }
     .header a img {
-      width: 650px; }
+      width: 700px; }
 
 .footer {
-  margin-right: 50px; }
+  margin-right: 50px;
+  padding-bottom: 128px;
+  padding-top: 64px; }
   .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -109,14 +111,19 @@ a {
   color: #00cc00; }
 
 .home-page-container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 64px;
+  margin-top: 64px; }
   .home-page-container .randomQuote {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     font-size: 100px; }
     .home-page-container .randomQuote .fa-quote-left {
       grid-column-start: 1;
-      color: #00cc00; }
+      color: #00cc00;
+      text-align: right;
+      margin-right: 16px;
+      font-size: 130px; }
     .home-page-container .randomQuote div {
       grid-column-start: 2; }
       .home-page-container .randomQuote div p:first-child {
@@ -139,7 +146,10 @@ a {
         margin-left: 48px; }
     .home-page-container .randomQuote .fa-quote-right {
       grid-column-start: 3;
-      color: #00cc00; }
+      color: #00cc00;
+      text-align: left;
+      margin-left: 16px;
+      font-size: 130px; }
   .home-page-container button {
     width: 250px;
     border: 2px solid #0c0;
@@ -386,6 +396,17 @@ a {
     text-align: left;
     padding-left: 30px; }
 
+.pagination {
+  grid-column-start: 2;
+  margin-top: 32px; }
+
+.pagination a {
+  font-size: 20px;
+  color: #00cc00;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none; }
+
 .tag-page-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -428,3 +449,57 @@ a {
     color: #00cc00;
     grid-row-start: 1;
     text-align: left; }
+
+.quote-author-page-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 100px; }
+  .quote-author-page-container .fa-quote-left {
+    grid-column-start: 1;
+    color: #00cc00;
+    text-align: right;
+    padding-right: 30px; }
+  .quote-author-page-container h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 32px;
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white; }
+  .quote-author-page-container .authorQuote {
+    grid-column-start: 2; }
+    .quote-author-page-container .authorQuote p {
+      font-size: 40px;
+      font-family: 'Exo', sans-serif;
+      color: white;
+      font-size: 40px;
+      width: 640px;
+      text-align: left;
+      line-height: 60px;
+      margin-bottom: 50px; }
+    .quote-author-page-container .authorQuote h3 {
+      font-size: 20px;
+      margin-bottom: 50px;
+      font-family: 'Exo', sans-serif;
+      color: white; }
+    .quote-author-page-container .authorQuote a {
+      font-size: 20px;
+      font-style: italic; }
+  .quote-author-page-container .fa-quote-right {
+    grid-column-start: 3;
+    color: #00cc00;
+    grid-row-start: 1;
+    text-align: left;
+    padding-left: 30px; }
+  .quote-author-page-container button {
+    width: 250px;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 20px;
+    color: #0c0;
+    background-color: #222; }
+  .quote-author-page-container div {
+    grid-column-start: 2; }
+  .quote-author-page-container button:hover {
+    cursor: pointer; }

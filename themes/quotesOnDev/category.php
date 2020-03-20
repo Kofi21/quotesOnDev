@@ -14,15 +14,23 @@
 
     <div class="categoryQuote">
        <p><?php the_content();?></p>
-        <h3> - <?php the_title();?></h3>
+        <h3> - <?php the_title();?> , 
+        <a class="source" href="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>"><span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></span></a>
+        </h3>
     </div>
-    
+
     <!-- Loop ends -->
     <?php endwhile;?>
-
-
-
     <i class="fas fa-quote-right"></i>    
+
+
+    <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">&rarr;</a>
+    </div>
 
 </div>
 

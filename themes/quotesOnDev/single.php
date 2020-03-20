@@ -1,21 +1,36 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
+<div class="quote-author-page-container">
+
+    <i class="fas fa-quote-left"></i>
+
+   
+
+<?php 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
+    <div class="authorQuote">
+       <p><?php the_content();?></p>
+        <h3> - <?php the_title();?> , 
+        <a class="source" href="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>"><span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></span></a>
+        </h3>
+
+    </div>
     
     <!-- Loop ends -->
     <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
 
-    
+    <i class="fas fa-quote-right"></i>    
+    <div>
+<button id="author-quote" onClick = "window.location.href = 'http://localhost:8888/quotesOnDev/'";
+>Show Me Another!</button>
+</div>
+</div>
+
+
+
 <?php get_footer();?>

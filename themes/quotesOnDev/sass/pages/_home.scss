@@ -13,6 +13,8 @@ a {
 
 .home-page-container {
   text-align: center;
+  margin-bottom: 64px;
+  margin-top: 64px;
 
   .randomQuote {
     display: grid;
@@ -22,6 +24,9 @@ a {
     .fa-quote-left {
       grid-column-start: 1;
       color: #00cc00;
+      text-align: right;
+      margin-right: 16px;
+      font-size: 130px;
     }
 
     div {
@@ -52,6 +57,9 @@ a {
     .fa-quote-right {
       grid-column-start: 3;
       color: #00cc00;
+      text-align: left;
+      margin-left: 16px;
+      font-size: 130px;
     }
   }
   button {

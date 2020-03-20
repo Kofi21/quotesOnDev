@@ -26,5 +26,7 @@
       });
 
       // Closing done function
-    }); // Closing event listener (random quote)
+    });
+
+  // Closing event listener (random quote)
 })(jQuery); // Closing document ready function
