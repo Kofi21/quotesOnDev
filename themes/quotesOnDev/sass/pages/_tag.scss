@@ -8,11 +8,20 @@
     color: #00cc00;
     text-align: right;
   }
+  h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 32px;
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white;
+  }
 
   .tags {
     grid-column-start: 2;
+    border-bottom: 1px dotted #fff;
 
-    p:first-child {
+    p {
       font-size: 40px;
       font-family: 'Exo', sans-serif;
       color: white;
@@ -24,11 +33,16 @@
       line-height: 60px;
       margin-bottom: 50px;
     }
-    p {
+    h3 {
       font-size: 20px;
       margin-bottom: 50px;
       font-family: 'Exo', sans-serif;
       color: white;
+    }
+
+    a {
+      font-size: 20px;
+      font-style: italic;
     }
   }
 

@@ -134,7 +134,9 @@ a {
         font-size: 20px;
         margin-bottom: 50px;
         font-family: 'Exo', sans-serif;
-        color: white; }
+        color: white;
+        text-align: left;
+        margin-left: 48px; }
     .home-page-container .randomQuote .fa-quote-right {
       grid-column-start: 3;
       color: #00cc00; }
@@ -146,6 +148,8 @@ a {
     font-size: 20px;
     color: #0c0;
     background-color: #222; }
+  .home-page-container button:hover {
+    cursor: pointer; }
 
 .about {
   display: grid;
@@ -346,31 +350,41 @@ a {
   .category-page-container .fa-quote-left {
     grid-column-start: 1;
     color: #00cc00;
-    text-align: right; }
+    text-align: right;
+    padding-right: 30px; }
+  .category-page-container h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 32px;
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white; }
   .category-page-container .categoryQuote {
-    grid-column-start: 2; }
-    .category-page-container .categoryQuote p:first-child {
+    grid-column-start: 2;
+    border-bottom: 1px dotted #fff; }
+    .category-page-container .categoryQuote p {
       font-size: 40px;
       font-family: 'Exo', sans-serif;
       color: white;
       font-size: 40px;
       width: 640px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: left;
       line-height: 60px;
       margin-bottom: 50px; }
-    .category-page-container .categoryQuote p {
+    .category-page-container .categoryQuote h3 {
       font-size: 20px;
       margin-bottom: 50px;
       font-family: 'Exo', sans-serif;
       color: white; }
+    .category-page-container .categoryQuote a {
+      font-size: 20px;
+      font-style: italic; }
   .category-page-container .fa-quote-right {
     grid-column-start: 3;
     color: #00cc00;
     grid-row-start: 1;
-    text-align: left; }
-<<<<<<< HEAD
+    text-align: left;
+    padding-left: 30px; }
 
 .tag-page-container {
   display: grid;
@@ -380,9 +394,17 @@ a {
     grid-column-start: 1;
     color: #00cc00;
     text-align: right; }
+  .tag-page-container h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 32px;
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white; }
   .tag-page-container .tags {
-    grid-column-start: 2; }
-    .tag-page-container .tags p:first-child {
+    grid-column-start: 2;
+    border-bottom: 1px dotted #fff; }
+    .tag-page-container .tags p {
       font-size: 40px;
       font-family: 'Exo', sans-serif;
       color: white;
@@ -393,15 +415,16 @@ a {
       text-align: left;
       line-height: 60px;
       margin-bottom: 50px; }
-    .tag-page-container .tags p {
+    .tag-page-container .tags h3 {
       font-size: 20px;
       margin-bottom: 50px;
       font-family: 'Exo', sans-serif;
       color: white; }
+    .tag-page-container .tags a {
+      font-size: 20px;
+      font-style: italic; }
   .tag-page-container .fa-quote-right {
     grid-column-start: 3;
     color: #00cc00;
     grid-row-start: 1;
     text-align: left; }
-=======
->>>>>>> 254d58f2f550beacb147ee69145d8d27a3e42372

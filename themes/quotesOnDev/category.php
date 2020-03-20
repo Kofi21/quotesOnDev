@@ -13,8 +13,8 @@
     
 
     <div class="categoryQuote">
-       <?php the_content();?>
-        <?php the_title();?>
+       <p><?php the_content();?></p>
+        <h3> - <?php the_title();?></h3>
     </div>
     
     <!-- Loop ends -->
